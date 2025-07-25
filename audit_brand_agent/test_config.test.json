@@ -1,0 +1,41 @@
+{
+    "eval_set_id": "brand_audit_agent_evalset",
+    "name": "Brand Audit Agent Full Output Test",
+    "description": "Tests that the brand audit agent returns 18 sections with unique content, proper formatting, and bibliography.",
+    "eval_cases": [
+      {
+        "eval_id": "session_01",
+        "conversation": [
+          {
+            "invocation_id": "e-001",
+            "user_content": {
+              "parts": [
+                {
+                  "text": "Do a brand audit for Nike."
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "text": "Nike Brand Audit Report\n\n1. Origin Story\nNike was founded in 1964 as Blue Ribbon Sports by Bill Bowerman and Phil Knight. The company officially became Nike, Inc. in 1971. [1]\nKey people: Phil Knight, Bill Bowerman. [1]\nBrand values: Innovation, performance, inspiration. [2]\nEarly innovations: The waffle sole running shoe. [3]\nSources Used: [1] https://about.nike.com, [2] https://www.nike.com, [3] https://www.businessinsider.com\n\n2. Style Mission Vision Major Shifts\nMission: Bring inspiration and innovation to every athlete in the world. [1]\nVision: To remain the most authentic, connected, and distinctive brand. [2]\nBrand evolution: From running shoes to a global sports brand. [1]\nThemes: “Just Do It,” empowering athletes. [2]\nSources Used: [1] https://about.nike.com, [2] https://www.nike.com\n\n... (sections 3-17 here, each section must have unique content and sources) ...\n\n18. Advertising Spend\nNike’s annual advertising spend is estimated at $3.5 billion, with a heavy focus on digital, social media, and influencer partnerships. [1]\nSpend breakdown: Digital $1.8B, TV $900M, Print $300M, OOH $250M, Influencer $250M. [2]\nROI metrics: Consistently above industry benchmark. [3]\nSources Used: [1] https://adage.com, [2] https://www.marketingdive.com, [3] https://www.statista.com\n\nBibliography:\n[1] Nike’s History and Mission. About Nike. 2024. https://about.nike.com\n[2] Nike Brand Values. Nike. 2024. https://www.nike.com\n[3] Nike’s Waffle Sole History. Business Insider. 2024. https://www.businessinsider.com\n[4] Nike Ad Spend. AdAge. 2024. https://adage.com\n[5] Nike Marketing Spend Breakdown. Marketing Dive. 2024. https://www.marketingdive.com\n[6] Nike ROI Metrics. Statista. 2024. https://www.statista.com\n"
+                }
+              ],
+              "role": null
+            },
+            "intermediate_data": {
+              "tool_uses": [],
+              "intermediate_responses": []
+            }
+          }
+        ],
+        "session_input": {
+          "app_name": "brand_audit",
+          "user_id": "user",
+          "state": {}
+        }
+      }
+    ]
+  }
+  

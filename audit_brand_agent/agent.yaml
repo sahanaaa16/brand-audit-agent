@@ -1,0 +1,5 @@
+- id: simple_nike_audit
+  description: Test a full brand audit workflow for Nike.
+  agent: root_agent
+  input: "Can you do a brand audit for Nike?"
+

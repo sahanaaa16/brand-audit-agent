@@ -1,0 +1,6 @@
+google-adk
+litellm
+python-dotenv
+fpdf 
+pytest
+pytest-asyncio 
